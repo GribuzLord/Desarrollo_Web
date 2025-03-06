@@ -28,3 +28,15 @@ body{
 span{
     font-size: 2rem;
 }
+
+.contenedor{
+    width: 65rem;
+    margin: 0 auto; 
+}
+
+.nav-bg{
+    background-color: var(--secundario);
+}
+.navegacion-principal{
+    
+}
