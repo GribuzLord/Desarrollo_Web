@@ -25,12 +25,12 @@ body{
     
 }
 
-span{
+.titulo span{
     font-size: 2rem;
 }
 
 .contenedor{
-    width: 65rem;
+    width: 85rem;
     margin: 0 auto; 
 }
 
@@ -39,6 +39,10 @@ span{
 }
 .navegacion-principal {
     padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+
 }
 
 .navegacion-principal a{
