@@ -159,10 +159,37 @@ h1,h2,h3{
     .servicios{
         display: grid;
         grid-template-columns:repeat(3,1fr); /*fr=parte fraccionaria del espacio total*/
+        column-gap: 2rem;
     }
 }
 
 
 .servicios svg,p{
     color: var(--oscuro);
+}
+
+.servicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.servicio h3{
+    color: var(--secundario);
+    font-weight: 400;
+}
+
+.servicio p{
+    line-height: 1.5;
+    text-align: center;
+}
+
+.servicio .iconos{
+    height: 15rem;
+    width: 15rem;
+    background-color:var(--primario);
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
