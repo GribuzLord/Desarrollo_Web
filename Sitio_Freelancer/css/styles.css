@@ -43,6 +43,11 @@ body{
     border-radius: 0.5rem;
     width: 90%;
     text-align: center;
+    border: none;
+}
+
+.boton:hover{
+    cursor: pointer;
 }
 
 .sombra{
@@ -78,6 +83,26 @@ h1,h2,h3{
 .titulo span{
     font-size: 1.8rem;
 }
+
+/*Utilidades*/
+.w-sm-100{
+    width: 100%;
+}
+
+@media(min-width:768px){
+    .w-sm-100{
+        width: auto;
+    }
+}
+
+.flex{
+    display: flex;
+}
+
+.alinear-derecha{
+    justify-content: flex-end;
+}
+
 
 /*Navegacion principal*/
 .nav-bg{
@@ -142,13 +167,11 @@ h1,h2,h3{
 
 }
 
-.contenido-hero h2{
+.contenido-hero h2,.contenido-hero p{
     color: var(--blanco);
 }
 
-.contenido-hero p{
-    color: var(--blanco);
-}
+
 
 .ubicacion{
     display: flex;
@@ -220,10 +243,28 @@ h1,h2,h3{
     color: var(--primario);
 }
 
-.campos{
+.contenedor-campos{
 
 }
 
 .campo{
-    
+    margin-bottom: 1rem;
+}
+
+.campo label{
+    color: var(--blanco);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.input-text{
+    width: 100%;
+    border: none;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+}
+
+.enviar .boton{
+    width: 100%;
 }
