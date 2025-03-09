@@ -6,10 +6,10 @@
     --gris:#757575;
     
 }
-
+/**Globales**/
 html{
     font-size: 62.5%;
-    box-sizing: border-box;
+    box-sizing: border-box; /*Hack para box model*/
 }
 
 *,*:before,*:after{
@@ -23,28 +23,6 @@ body{
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-}
-
-h1{
-    font-size: 3.8rem;
-}
-
-h2{
-    font-size: 2.8rem;
-
-}
-
-h3{
-    font-size: 1.8rem;
-}
-
-h1,h2,h3{
-    text-align: center; 
-}
-
-
-.titulo span{
-    font-size: 1.8rem;
 }
 
 .contenedor{
@@ -66,6 +44,30 @@ h1,h2,h3{
     text-align: center;
 }
 
+/**Tipografia**/
+h1{
+    font-size: 3.8rem;
+}
+
+h2{
+    font-size: 2.8rem;
+
+}
+
+h3{
+    font-size: 1.8rem;
+}
+
+h1,h2,h3{
+    text-align: center; 
+}
+
+/*Titulos*/
+.titulo span{
+    font-size: 1.8rem;
+}
+
+/*Navegacion principal*/
 .nav-bg{
     background-color: var(--secundario);
 }
@@ -77,6 +79,8 @@ h1,h2,h3{
 
 }
 
+
+/*Media queries*/
 @media (min-width: 300px) { /**Celular**/
      .navegacion-principal{
         align-items: center;
@@ -84,9 +88,7 @@ h1,h2,h3{
 .boton{
     width: auto;
 }
-
 }
-
 @media (min-width: 768px) {
      .navegacion-principal{
         flex-direction: row;
@@ -105,6 +107,7 @@ h1,h2,h3{
         color: var(--oscuro);
 }
 
+/*Hero*/
 .hero{
     background-image: url(../img/hero.jpg);
     background-repeat: no-repeat;
@@ -120,7 +123,7 @@ h1,h2,h3{
     width: 100%;
     height: 100%;  
     
-    display: flex;
+    display: flex;          /*Metodo para centrar elementos con display*/
     flex-direction: column;
     align-items: center;
     justify-content: center;
