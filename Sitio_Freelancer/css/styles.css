@@ -54,21 +54,7 @@ body{
     border-radius: 1rem;
 }
 
-/*Media queries*/
-@media (min-width: 300px) { /**Celular**/
-    .navegacion-principal{
-       align-items: center;
-    }
-.boton{
-   width: auto;
-}
-}
-@media (min-width: 768px) {
-    .navegacion-principal{
-       flex-direction: row;
-       justify-content:space-between;
-    }
-}
+
 
 /**Tipografia**/
 h1{
@@ -116,6 +102,21 @@ h1,h2,h3{
         color: var(--oscuro);
 }
 
+/*Media queries*/
+@media (min-width: 300px) { /**Celular**/
+    .navegacion-principal{
+       align-items: center;
+    }
+.boton{
+   width: auto;
+}
+}
+@media (min-width: 768px) {
+    .navegacion-principal{
+       flex-direction: row;
+       justify-content:space-between;
+    }
+}
 /*Hero*/
 .hero{
     background-image: url(../img/hero.jpg);
