@@ -10,6 +10,7 @@
 html{
     font-size: 62.5%;
     box-sizing: border-box; /*Hack para box model*/
+    scroll-snap-type: y mandatory; /*Scrolling para que nos lleve a las demas secciones*/
 }
 
 *,*:before,*:after{
@@ -182,6 +183,11 @@ h1,h2,h3{
 
 /*Flexbox: Row o column*/
 /*Grid: Te da acceso a todas las domensiones*/
+
+.servicios,.navegacion-principal,.formulario{
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}
 
 @media(min-width:768px){
     .servicios{
