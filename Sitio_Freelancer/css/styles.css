@@ -27,7 +27,7 @@ body{
 }
 
 .contenedor{
-    max-width: 85rem;
+    max-width: 120rem;
     margin: 0 auto; 
 }
 
@@ -43,6 +43,15 @@ body{
     border-radius: 0.5rem;
     width: 90%;
     text-align: center;
+}
+
+.sombra{
+    -webkit-box-shadow:0px 5px 15px 0px rgba(112,112,112,0.48);
+    -moz-box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.48);
+    box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.48);
+    background-color: var(--blanco);
+    padding: 2rem;
+    border-radius: 1rem;
 }
 
 /**Tipografia**/
@@ -115,6 +124,7 @@ h1,h2,h3{
     background-size: cover;
     height: 450px;
     position: relative;
+    margin-bottom: 2rem;
 }
 
 .contenido-hero{
