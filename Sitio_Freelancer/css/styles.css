@@ -4,7 +4,7 @@
     --primario:#ffc107;
     --secundario:#0097a7;
     --gris:#757575;
-    
+    --grisClaro:#DFE9F3;
 }
 /**Globales**/
 html{
@@ -23,6 +23,7 @@ body{
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    background-image: linear-gradient(to top,var(--grisClaro) 0%,var(--blanco) 100%);/*Primero se pasa hacia donde va el degradado, Despues cual seria el primer color y al final el otro color(Se le agregan los porcentajes de hasta que altura llegara a ese color*/
 }
 
 .contenedor{
