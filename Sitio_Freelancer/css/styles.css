@@ -52,6 +52,20 @@ h1,h2,h3{
     margin: 0 auto; 
 }
 
+.boton{
+    background-color: var(--secundario);
+    color: var(--blanco);
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 0.5rem;
+    width: 90%;
+    text-align: center;
+}
+
 .nav-bg{
     background-color: var(--secundario);
 }
@@ -63,8 +77,14 @@ h1,h2,h3{
 
 }
 
-@media (min-width: 480px) { 
-     
+@media (min-width: 300px) { /**Celular**/
+     .navegacion-principal{
+        align-items: center;
+     }
+.boton{
+    width: auto;
+}
+
 }
 
 @media (min-width: 768px) {
@@ -112,9 +132,6 @@ h1,h2,h3{
     color: var(--blanco);
 }
 
-.contenido-hero a{
-    text-decoration: none;
-}
 .ubicacion{
     display: flex;
     align-items:end;
